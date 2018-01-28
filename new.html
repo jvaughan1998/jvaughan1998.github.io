@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Add New Resource</title>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="bin/styles.css">
+    <link rel="stylesheet" type="text/css" href="bin/material.css">
+    <script type="text/javascript" src="bin/new.js"></script>
+</head>
+
+<body>
+    <ul class="nav">
+        <li><a href="index.html">Index</a></li>
+        <li style="float:right;"><a href="new.html" class="add-new"></a></li>
+    </ul>
+    <div class="container">
+        <form>
+            <div class="group">
+                <input type="text" id="input-title" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Title</label>
+            </div>
+            <div class="group">
+                <input type="text" id="input-desc" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Description</label>
+            </div>
+            <div class="group">
+                <input type="text" id="input-url" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>URL</label>
+            </div>
+            <div class="group">
+                <input type="text" id="input-standard" style="width:150px;">
+                <span class="highlight" style="width:150px;"></span>
+                <span class="bar" style="width:150px;"></span>
+                <label>Standard</label>
+            </div>
+            <div class="group">
+                <input type="text" id="input-grade" style="width:40px;">
+                <span class="highlight" style="width:40px;"></span>
+                <span class="bar" style="width:40px;"></span>
+                <label>Grade Level</label>
+            </div>
+            <div class="group">
+                <input type="text" id="input-unit" style="width:40px;">
+                <span class="highlight" style="width:40px;"></span>
+                <span class="bar" style="width:40px;"></span>
+                <label>Unit</label>
+            </div>
+            <div class="group">
+                <input type="text" id="input-notes">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Notes</label>
+            </div>
+            <div class="group">
+                <input type="file" id="input-file">
+                <span class="bar"></span>
+                <label>Image</label>
+            </div>
+            <p class="error-hidden" id="validation-error" style="width:255px;"><br></p>
+            <br><br>
+            <div class="button raised" id="submit" onclick="submit()">SUBMIT</div>
+        </form>
+    </div>
+</body>
+
+</html>
